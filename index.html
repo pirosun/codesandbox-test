@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Parcel Sandbox</title>
+    <title>Todo</title>
     <meta charset="UTF-8" />
   </head>
 
   <body>
-    <div id="app"></div>
-    <p>modified</p>
-
+    <div class="input-area">
+      <input id="add-text" placeholder="Input Todo" />
+      <button id="add-button">add button</button>
+    </div>
+    <div class="incomplete-area">
+      <p class="title">imcomplete todo</p>
+      <ul id="incomplete-list">
+        <div class="list-row">
+          <li>this is todo.</li>
+          <button>completed</button>
+          <button>delete</button>
+        </div>
+      </ul>
+    </div>
+    <div class="complete-area">
+      <p class="title">completed todo</p>
+      <ul>
+        <div class="list-row">
+          <li>this was todo.</li>
+          <button>restore</button>
+        </div>
+      </ul>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
